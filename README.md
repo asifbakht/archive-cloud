@@ -10,12 +10,15 @@ Single resource:
 4. Elastic Cluster
 5. ALB Listener
 
-Resources based on archive project
-6. Elastic Container Repo
-7. Elastic Container Service
-8. Target Group
-9. Security Group for ECS
-10. Extends Listener Rule with Path based routing
+Resources are created based for single archive project:
+
+1. Elastic Container Repo
+2. Elastic Container Service
+3. Target Group
+4. Security Group for ECS
+5. Extends Listener Rule with Path based routing
+
+If different archives are later required to added then it just need to add archive module and provide unique names to module. 
 
 
 It will create single ALB that expose 1 single URL with listener rules where number of rules can be added based on number of archives added. Each rule 
